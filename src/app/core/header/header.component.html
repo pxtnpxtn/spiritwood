@@ -1,0 +1,13 @@
+<div class="navContainer">
+  <div class="navLinks">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+    <a routerLink="our-operation" routerLinkActive="active">Our Operation</a>
+    <a routerLink="about-us" routerLinkActive="active">About Us</a>
+    <a routerLink="contact-us" routerLinkActive="active">Contact Us</a>
+  </div>
+  <div class="translationToggle">
+    <button (click)="switchLanguage('en')">en</button>
+    <span style="color: white">/</span>
+    <button (click)="switchLanguage('zh')">zh</button>
+  </div>
+</div>

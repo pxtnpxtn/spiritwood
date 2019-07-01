@@ -1,0 +1,136 @@
+// Globally Available Variables
+
+// Colors
+$black: #000 !default;
+$light-grey: #d1d2d3 !default;
+
+// Media Queries
+$smallphone: 412px;
+$phone: 576px;
+$tablet-min: 577px;
+$container: 940px;
+$tablet: 1023px;
+$desktop: 1024px;
+
+@mixin smallphone {
+  @media (max-width: #{$smallphone}) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: #{$phone}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-min}) and (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin container {
+  @media(max-width: #{$container}) {
+    @content;
+  }
+}
+
+@mixin web {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+// Use?
+
+// .container-standard {
+//   max-width: 940px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   margin: auto;
+// }
+
+// .container-tab {
+//   max-width: 940px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   margin: auto;
+//   @include phone {
+//     padding: 0;
+//   }
+// }
+
+// .container-standard-hero {
+//   max-width: 940px;
+//   display: flex;
+//   flex-direction: column;
+//   margin: auto;
+//   @include smallphone {
+//     margin: 0 auto;
+//   }
+//   @include phone {
+//     margin: 0 auto;
+//   }
+// }
+
+// @media (max-width: 576px) {
+// .container-standard-hero {
+//   max-width: 100%;
+//   padding: 0 24px;
+//   }
+// }
+
+// .container-standard-hero-left {
+//   max-width: 940px;
+//   display: flex;
+//   flex-direction: column;
+//   margin: auto;
+//   align-items: flex-start;
+//   width: 80%;
+//   @include phone {
+//     display: block;
+//     margin: 0 auto;
+//   }
+// }
+
+// .container-large {
+//   max-width: 1100px;
+//   display: flex;
+//   flex-direction: column;
+//   margin: auto;
+// }
+
+
+// @media (max-width: #{$phone}) {
+//   .container-standard {
+//     max-width: 100%;
+//     padding: 0px 24px;
+//   }
+//   .container-large {
+//     max-width: 540px;
+//     padding: 0px 24px;
+//   }
+// }
+
+// @media only screen and (min-width: #{$tablet-min}) and (max-width: #{$tablet}) {
+//   .container-standard {
+//     max-width: 100%;
+//     padding: 0px 60px;
+//   }
+//   .container-large {
+//     max-width: 100%;
+//     padding: 0px 60px;
+//   }
+//   .container-standard-hero {
+//     padding: 0 60px;
+//   }
+// }
+
+// @media (min-width: #{$desktop}) {
+//   .container {
+//     max-width: 940px;
+//   }
+// }
