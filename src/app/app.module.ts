@@ -13,6 +13,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { HomeComponent } from './modules/home/home.component';
+import { TranslateSharedLazyModule } from './modules/translate-shared-lazy/translate-shared-lazy.module';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -35,8 +36,10 @@ export function HttpLoaderFactory(http: HttpClient) {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
-      }
-    })
+      },
+      isolate: false
+    }),
+    TranslateSharedLazyModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
