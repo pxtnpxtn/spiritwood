@@ -1,0 +1,16 @@
+:host {
+    .hero {
+        height: 100vh;
+        width: 100vw;
+        max-width:100%;
+        object-fit: cover;
+    }
+    // .hero-gradient::after {
+    //     display: block;
+    //     position: relative;
+    //     background-image: linear-gradient(to bottom, rgba(232, 18, 18, 0.692) 0, #4f1e1e 100%);
+    //     content: '';
+    //     height: 100vh;
+    //     width: 100vw;
+    // }
+}
