@@ -2,11 +2,12 @@
 
 :host {
     position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
     width: 100%;
     height: 50px;
     background: transparent;
-    display: flex;
-    justify-content: center;
 
     .navContainer {
         width: 100%;
@@ -18,11 +19,27 @@
     }
 
     a {
-        color: $black;
+        color: $white;
         margin-right: 10px;
         font-size: 14px;
         text-transform: uppercase;
         text-decoration: none;
+    }
+
+    a:hover { 
+        color: $dark-green;
+    }
+
+    .downn {
+        a {
+            color: $light-green;
+        }
+        a:hover {
+            color: $dark-green;
+        }
+        .active {
+           border-bottom: 1px solid $light-green;
+        }
     }
 
     input {
@@ -30,6 +47,6 @@
     }
 
     .active {
-        border-bottom: 1px solid green;
+        border-bottom: 1px solid $white;
     }
 }

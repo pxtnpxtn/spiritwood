@@ -8,12 +8,16 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'our-operation',
+    loadChildren: './modules/our-operation/our-operation.module#OurOperationModule'
+  },
+  {
     path: 'about-us',
     loadChildren: './modules/about-us/about-us.module#AboutUsModule'
   },
   {
-    path: 'our-operation',
-    loadChildren: './modules/our-operation/our-operation.module#OurOperationModule'
+    path: 'gallery',
+    loadChildren: './modules/gallery/gallery.module#GalleryModule'
   },
   {
     path: 'contact-us',

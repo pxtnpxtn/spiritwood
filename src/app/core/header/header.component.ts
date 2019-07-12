@@ -1,9 +1,7 @@
 import { Component, AfterViewInit, HostBinding } from '@angular/core';
 import {
   distinctUntilChanged,
-  filter,
   map,
-  pairwise,
   share,
   throttleTime,
   tap

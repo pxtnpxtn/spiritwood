@@ -16,7 +16,6 @@ import { FooterComponent } from './core/footer/footer.component';
 import { HomeComponent } from './modules/home/home.component';
 import { TranslateSharedLazyModule } from './modules/translate-shared-lazy/translate-shared-lazy.module';
 
-
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }

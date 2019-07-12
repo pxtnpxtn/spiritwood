@@ -1,8 +1,9 @@
 <div class="navContainer">
-  <div class="navLinks">
+  <div class="navLinks" [class.downn]="isVisible">
     <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
     <a routerLink="our-operation" routerLinkActive="active">Our Operation</a>
     <a routerLink="about-us" routerLinkActive="active">About Us</a>
+    <a routerLink="gallery" routerLinkActive="active">Gallery</a>
     <a routerLink="contact-us" routerLinkActive="active">Contact Us</a>
   </div>
   <div class="translationToggle">
