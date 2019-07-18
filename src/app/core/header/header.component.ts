@@ -33,11 +33,39 @@ import { TranslateService } from '@ngx-translate/core';
         style({ background: 'white', color: 'green' })
       ),
       transition('* => *', animate('200ms ease-in'))
-    ])
+    ]),
+    trigger('hamburger', [
+      state('open', style({
+        backgroundColor: 'red',
+        height: '100vh'
+      })),
+      state('closed', style({
+        backgroundColor: 'green',
+        top: 0
+      })),
+      transition('open => closed', [
+        animate('5s ease-in')
+      ]),
+      transition('closed => open', [
+        animate('5s ease-in')
+      ]),
+    ]),
+    // trigger('hamburger', [
+    //   state(
+    //     VisibilityState.Hidden,
+    //     style({ background: 'transparent', color: 'white' })
+    //   ),
+    //   state(
+    //     VisibilityState.Visible,
+    //     style({ background: 'white', color: 'green' })
+    //   ),
+    //   transition('* => *', animate('200ms ease-in'))
+    // ])
   ]
 })
 export class HeaderComponent implements AfterViewInit {
 
+  public mobileMenu = false;
   private isVisible = false;
 
   @HostBinding('@toggle')
@@ -60,6 +88,10 @@ export class HeaderComponent implements AfterViewInit {
 
   constructor(private translate: TranslateService) {
     translate.setDefaultLang('en');
+  }
+
+  mobileMenuToggle() {
+    this.mobileMenu = !this.mobileMenu
   }
 
   switchLanguage(language: string) {

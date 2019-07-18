@@ -39,7 +39,7 @@ $desktop: 1024px;
   }
 }
 
-@mixin web {
+@mixin desktop {
   @media (min-width: #{$desktop}) {
     @content;
   }

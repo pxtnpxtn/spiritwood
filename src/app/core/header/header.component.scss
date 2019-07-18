@@ -16,6 +16,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        z-index: 100;
     }
 
     a {
@@ -30,7 +31,56 @@
         color: $dark-green;
     }
 
-    .downn {
+    input {
+        background: $light-grey;
+    }
+
+    .active {
+        border-bottom: 1px solid $white;
+    }
+
+    .logo {
+        width: 46px;
+        height: 46px;
+        background-image: url("../../../assets/logo-black.png");
+        background-size: 100% 100%;
+    }
+
+    .desktopNavLinks {
+        display: flex;
+        @include smallphone {
+            display: none;
+        }
+        @include phone {
+            display: none;
+        }
+        @include tablet {
+            display: none;
+        }
+    }
+
+    .hamburgerMenu {
+        @include desktop {
+            display: none;
+        }
+    }
+
+    .mobileMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        color: red;
+        background: blue;
+        @include desktop {
+            display: none;
+        }
+    }
+
+    .down {
         a {
             color: $light-green;
         }
@@ -40,13 +90,8 @@
         .active {
            border-bottom: 1px solid $light-green;
         }
-    }
-
-    input {
-        background: $light-grey;
-    }
-
-    .active {
-        border-bottom: 1px solid $white;
+        .logo {
+            background-image: url("../../../assets/logo-green.png");
+        }
     }
 }

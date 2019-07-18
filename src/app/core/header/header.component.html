@@ -1,11 +1,27 @@
 <div class="navContainer">
-  <div class="navLinks" [class.downn]="isVisible">
+  <div class="logo" [class.down]="isVisible"></div>
+  <div class="desktopNavLinks" [class.down]="isVisible">
     <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
     <a routerLink="our-operation" routerLinkActive="active">Our Operation</a>
     <a routerLink="about-us" routerLinkActive="active">About Us</a>
     <a routerLink="gallery" routerLinkActive="active">Gallery</a>
     <a routerLink="contact-us" routerLinkActive="active">Contact Us</a>
+    <div class="translationToggle">
+      <button (click)="switchLanguage('en')">en</button>
+      <span style="color: white">/</span>
+      <button (click)="switchLanguage('zh')">zh</button>
+    </div>
   </div>
+  <button (click)="mobileMenuToggle()" class="hamburgerMenu">
+    HAMBURGER
+  </button>
+</div>
+<div [@hamburger]="mobileMenu ? 'open' : 'closed'" *ngIf="mobileMenu" class="mobileMenu">
+  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+  <a routerLink="our-operation" routerLinkActive="active">Our Operation</a>
+  <a routerLink="about-us" routerLinkActive="active">About Us</a>
+  <a routerLink="gallery" routerLinkActive="active">Gallery</a>
+  <a routerLink="contact-us" routerLinkActive="active">Contact Us</a>
   <div class="translationToggle">
     <button (click)="switchLanguage('en')">en</button>
     <span style="color: white">/</span>
