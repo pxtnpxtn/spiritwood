@@ -6,6 +6,7 @@ $black: #000 !default;
 $light-grey: #d1d2d3 !default;
 $dark-green: #21402e;
 $light-green: #006d37;
+$text-default: #373a3c;
 
 // Media Queries
 $smallphone: 412px;
@@ -34,7 +35,7 @@ $desktop: 1024px;
 }
 
 @mixin container {
-  @media(max-width: #{$container}) {
+  @media (max-width: #{$container}) {
     @content;
   }
 }
@@ -105,7 +106,6 @@ $desktop: 1024px;
 //   flex-direction: column;
 //   margin: auto;
 // }
-
 
 // @media (max-width: #{$phone}) {
 //   .container-standard {

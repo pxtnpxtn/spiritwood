@@ -136,5 +136,10 @@
       }
     }
   },
-  "defaultProject": "spiritwood"
+  "defaultProject": "spiritwood",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

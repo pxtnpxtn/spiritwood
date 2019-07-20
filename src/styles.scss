@@ -1,10 +1,10 @@
 @import './variables.scss';
 
 body {
-    margin: 0;
+  margin: 0;
+  color: $text-default;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-  

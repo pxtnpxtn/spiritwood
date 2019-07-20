@@ -82,7 +82,7 @@ export class HeaderComponent implements AfterViewInit {
       tap((v) => console.log('scroll', v))
     );
 
-    // Can this be done better?
+    // TODO: Can this be done better?
     scroll$.subscribe((visibility: VisibilityState) => visibility === 'visible' ? this.isVisible = true : this.isVisible = false)
   }
 
