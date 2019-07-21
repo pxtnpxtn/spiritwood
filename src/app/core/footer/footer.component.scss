@@ -1,0 +1,45 @@
+@import '../../../styles.scss';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  background: $dark-green;
+  padding: 30px 60px;
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    a {
+      padding: 5px;
+      color: $white;
+      text-decoration: none;
+    }
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div,
+    img {
+      padding: 5px;
+    }
+  }
+
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+}
