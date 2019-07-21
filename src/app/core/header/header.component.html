@@ -1,7 +1,12 @@
 <div class="navContainer">
   <div class="logo" [class.down]="isVisible"></div>
   <div class="desktopNavLinks" [class.down]="isVisible">
-    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+    <a
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
     <a routerLink="our-operation" routerLinkActive="active">Our Operation</a>
     <a routerLink="about-us" routerLinkActive="active">About Us</a>
     <a routerLink="gallery" routerLinkActive="active">Gallery</a>
@@ -16,8 +21,13 @@
     HAMBURGER
   </button>
 </div>
-<div [@hamburger]="mobileMenu ? 'open' : 'closed'" *ngIf="mobileMenu" class="mobileMenu">
-  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+<div [@hamburger] *ngIf="mobileMenu" class="mobileMenu">
+  <a
+    routerLink="/"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Home</a
+  >
   <a routerLink="our-operation" routerLinkActive="active">Our Operation</a>
   <a routerLink="about-us" routerLinkActive="active">About Us</a>
   <a routerLink="gallery" routerLinkActive="active">Gallery</a>

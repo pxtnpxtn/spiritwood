@@ -14,7 +14,7 @@ import {
   trigger
 } from '@angular/animations';
 import { fromEvent } from 'rxjs';
-import { VisibilityState } from './header.models'
+import { VisibilityState } from './header.models';
 // Translator
 import { TranslateService } from '@ngx-translate/core';
 
@@ -23,6 +23,7 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   animations: [
+    // Navbar Visibility Toggle
     trigger('toggle', [
       state(
         VisibilityState.Hidden,
@@ -34,37 +35,34 @@ import { TranslateService } from '@ngx-translate/core';
       ),
       transition('* => *', animate('200ms ease-in'))
     ]),
+    // Mobile Hamburger Menu
     trigger('hamburger', [
-      state('open', style({
-        backgroundColor: 'red',
-        height: '100vh'
-      })),
-      state('closed', style({
-        backgroundColor: 'green',
-        top: 0
-      })),
-      transition('open => closed', [
-        animate('5s ease-in')
+      transition(':enter', [
+        style({
+          transform: 'translateX(100%)'
+        }),
+        animate(
+          '500ms cubic-bezier(.01, .74, .29, 1)',
+          style({
+            transform: 'translateX(0%)'
+          })
+        )
       ]),
-      transition('closed => open', [
-        animate('5s ease-in')
-      ]),
-    ]),
-    // trigger('hamburger', [
-    //   state(
-    //     VisibilityState.Hidden,
-    //     style({ background: 'transparent', color: 'white' })
-    //   ),
-    //   state(
-    //     VisibilityState.Visible,
-    //     style({ background: 'white', color: 'green' })
-    //   ),
-    //   transition('* => *', animate('200ms ease-in'))
-    // ])
+      transition(':leave', [
+        style({
+          transform: 'translateX(0%)'
+        }),
+        animate(
+          '500ms cubic-bezier(.01, .74, .29, 1)',
+          style({
+            transform: 'translateX(100%)'
+          })
+        )
+      ])
+    ])
   ]
 })
 export class HeaderComponent implements AfterViewInit {
-
   public mobileMenu = false;
   private isVisible = false;
 
@@ -76,14 +74,22 @@ export class HeaderComponent implements AfterViewInit {
   ngAfterViewInit() {
     const scroll$ = fromEvent(window, 'scroll').pipe(
       throttleTime(10),
-      map(() => window.pageYOffset > 0 ? VisibilityState.Visible : VisibilityState.Hidden),
+      map(() =>
+        window.pageYOffset > 0
+          ? VisibilityState.Visible
+          : VisibilityState.Hidden
+      ),
       distinctUntilChanged(),
       share(),
-      tap((v) => console.log('scroll', v))
+      tap(v => console.log('scroll', v))
     );
 
     // TODO: Can this be done better?
-    scroll$.subscribe((visibility: VisibilityState) => visibility === 'visible' ? this.isVisible = true : this.isVisible = false)
+    scroll$.subscribe((visibility: VisibilityState) =>
+      visibility === 'visible'
+        ? (this.isVisible = true)
+        : (this.isVisible = false)
+    );
   }
 
   constructor(private translate: TranslateService) {
@@ -91,7 +97,7 @@ export class HeaderComponent implements AfterViewInit {
   }
 
   mobileMenuToggle() {
-    this.mobileMenu = !this.mobileMenu
+    this.mobileMenu = !this.mobileMenu;
   }
 
   switchLanguage(language: string) {
@@ -101,5 +107,4 @@ export class HeaderComponent implements AfterViewInit {
   ngOnDestroy(): void {
     console.log('Header shouldn`t be destroyed');
   }
-
 }
