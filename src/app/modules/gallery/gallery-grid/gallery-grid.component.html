@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="column">
+    <div
+      *ngFor="let image of images1"
+      class="image-gradient"
+      (mouseenter)="image.hover = true"
+      (mouseleave)="image.hover = false"
+    >
+      <img [src]="image" />
+    </div>
+  </div>
+  <div class="column">
+    <div
+      *ngFor="let image of images2"
+      class="image-gradient"
+      (mouseenter)="image.hover = true"
+      (mouseleave)="image.hover = false"
+    >
+      <img [src]="image" />
+    </div>
+  </div>
+  <div class="column">
+    <div
+      *ngFor="let image of images3"
+      class="image-gradient"
+      (mouseenter)="image.hover = true"
+      (mouseleave)="image.hover = false"
+    >
+      <img [src]="image" />
+    </div>
+  </div>
+  <div class="column">
+    <div
+      *ngFor="let image of images4"
+      class="image-gradient"
+      (mouseenter)="image.hover = true"
+      (mouseleave)="image.hover = false"
+    >
+      <img [src]="image" />
+    </div>
+  </div>
+</div>

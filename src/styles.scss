@@ -10,3 +10,14 @@ body {
   font-family: 'Roboto', sans-serif !important;
   font-weight: 400;
 }
+
+button {
+  color: $white;
+  background: $dark-green;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(204, 204, 204, 0.3);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(204, 204, 204, 0.3);
+  box-shadow: 2px 2px 5px 0px rgba(204, 204, 204, 0.3);
+}

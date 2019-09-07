@@ -1,0 +1,115 @@
+@import '../../../../styles.scss';
+
+:host {
+  display: flex;
+  justify-content: center;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    -ms-flex-wrap: wrap; /* IE10 */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+    // TODO: Remove after responsiveness is built into sections
+    width: 940px;
+  }
+
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .image-gradient {
+    position: relative;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+
+  .image-gradient:hover:after {
+    // TODO: Add 'View' text to overlay
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    // TODO: Add ease-in animation.
+    background: -moz-linear-gradient(
+      top,
+      rgba(228, 242, 235, 0.2) 0%,
+      rgba(228, 242, 235, 0.2) 100%
+    ); /* FF3.6+ */
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0%, rgba(228, 242, 235, 0.2)),
+      color-stop(100%, rgba(228, 242, 235, 0.2))
+    ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(
+      top,
+      rgba(228, 242, 235, 0.2) 0%,
+      rgba(228, 242, 235, 0.2) 100%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(
+      top,
+      rgba(228, 242, 235, 0.2) 0%,
+      rgba(228, 242, 235, 0.2) 100%
+    ); /* Opera 11.10+ */
+    background: -ms-linear-gradient(
+      top,
+      rgba(228, 242, 235, 0.2) 0%,
+      rgba(228, 242, 235, 0.2) 100%
+    ); /* IE10+ */
+    background: linear-gradient(
+      to bottom,
+      rgba(228, 242, 235, 0.2) 0%,
+      rgba(228, 242, 235, 0.2) 100%
+    ); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#868782', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
+
+  // TODO: Replace with proper mixins
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+
+    .row {
+      padding: 0;
+    }
+
+    // TODO: Come back to this. Hide images past 5, when on mobile.
+    .column:nth-child(n + 5) {
+      // display: none;
+      background: red;
+    }
+  }
+}

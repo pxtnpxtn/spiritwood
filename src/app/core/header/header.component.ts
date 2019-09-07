@@ -80,8 +80,7 @@ export class HeaderComponent implements AfterViewInit {
           : VisibilityState.Hidden
       ),
       distinctUntilChanged(),
-      share(),
-      tap(v => console.log('scroll', v))
+      share()
     );
 
     // TODO: Can this be done better?
