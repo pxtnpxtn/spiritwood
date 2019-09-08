@@ -22,6 +22,24 @@ button {
   box-shadow: 2px 2px 5px 0px rgba(204, 204, 204, 0.3);
 }
 
+header {
+  font-size: 32px;
+  margin-bottom: 24px;
+  @include smallphone {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  @include phone {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  @include tablet {
+    font-size: 32px;
+  }
+}
+
 // Vertical Spacing
 section {
   @include smallphone {
@@ -38,6 +56,16 @@ section {
 
   @include desktop {
     padding: 55px 0;
+  }
+
+  &.mobile-border-bottom-none {
+    @include smallphone {
+      padding: 0px;
+    }
+
+    @include phone {
+      padding: 0px;
+    }
   }
 
   // Horizontal Spacing
@@ -61,6 +89,15 @@ section {
 
     @include desktop {
       max-width: 940px;
+    }
+    &.mobile-full-width {
+      @include smallphone {
+        padding: 0px;
+      }
+
+      @include phone {
+        padding: 0px;
+      }
     }
   }
   &.grey {
