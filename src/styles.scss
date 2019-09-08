@@ -24,20 +24,20 @@ button {
 
 // Vertical Spacing
 section {
-  @include desktop {
-    padding: 60px 0;
-  }
-
-  @include tablet {
-    padding: 40px 0;
+  @include smallphone {
+    padding: 35px 0;
   }
 
   @include phone {
-    padding: 24px 0;
+    padding: 35px 0;
   }
 
-  @include smallphone {
-    padding: 24px 0;
+  @include tablet {
+    padding: 55px 0;
+  }
+
+  @include desktop {
+    padding: 55px 0;
   }
 
   // Horizontal Spacing
@@ -47,20 +47,20 @@ section {
     align-items: center;
     margin: auto;
 
-    @include desktop {
-      max-width: 940px;
-    }
-
-    @include tablet {
-      padding: 30px;
+    @include smallphone {
+      padding: 0 24px;
     }
 
     @include phone {
-      padding: 15px;
+      padding: 0 24px;
     }
 
-    @include smallphone {
-      padding: 15px;
+    @include tablet {
+      padding: 0 60px;
+    }
+
+    @include desktop {
+      max-width: 940px;
     }
   }
   &.grey {
