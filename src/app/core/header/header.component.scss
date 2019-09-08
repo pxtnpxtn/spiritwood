@@ -44,6 +44,10 @@
     height: 46px;
     background-image: url('../../../assets/logo-black.png');
     background-size: 100% 100%;
+    -webkit-transition: background-image 0.2s linear;
+    -moz-transition: background-image 0.2s linear;
+    -o-transition: background-image 0.2s linear;
+    transition: background-image 0.2s linear;
     &.down {
       background-image: url('../../../assets/logo-green.png');
     }
