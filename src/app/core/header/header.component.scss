@@ -1,5 +1,6 @@
 @import '../../../styles.scss';
 
+// TODO: Extend section tag with a 1100px option, harmonize header and footer.
 :host {
   position: fixed;
   display: flex;
@@ -17,6 +18,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 999;
+    margin: 0 18px;
   }
 
   a {

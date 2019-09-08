@@ -2,49 +2,70 @@
 
 :host {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   color: $white;
   background: $dark-green;
-  padding: 30px 60px;
-  @include tablet {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  @include desktop {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .footer-left {
+  .footer-container {
+    max-width: 1100px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-    a {
-      padding: 5px;
-      color: $white;
-      text-decoration: none;
+    margin: 0 auto;
+    padding: 32px 18px;
+    @include smallphone {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @include phone {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
     }
     @include desktop {
-      margin-bottom: 0;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
     }
-  }
-
-  .footer-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    div,
-    img {
-      padding: 5px;
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      a {
+        padding: 5px;
+        color: $white;
+        text-decoration: none;
+      }
+      @include desktop {
+        margin-bottom: 0;
+      }
     }
-  }
 
-  .logo {
-    width: 150px;
-    height: auto;
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      @include smallphone {
+        align-items: center;
+      }
+      @include phone {
+        align-items: center;
+      }
+      div,
+      img {
+        padding: 5px;
+      }
+    }
+
+    .logo {
+      width: 150px;
+      height: auto;
+    }
   }
 }
