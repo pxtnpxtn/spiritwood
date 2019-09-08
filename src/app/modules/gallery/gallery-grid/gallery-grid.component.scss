@@ -18,9 +18,27 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
+    margin-bottom: 35px;
+
+    // TODO: Delete this or mobile .row below.
+    // @include smallphone {
+    //   padding: 35px 0;
+    // }
+
+    // @include phone {
+    //   padding: 35px 0;
+    // }
+
+    // @include tablet {
+    //   padding: 55px 0;
+    // }
+
+    // @include desktop {
+    //   padding: 55px 0;
+    // }
 
     // TODO: Remove after responsiveness is built into sections
-    width: 940px;
+    width: 954px;
   }
 
   .column {

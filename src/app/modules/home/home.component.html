@@ -4,12 +4,11 @@
     class="hero hero-image"
     alt="Spiritwood Hero Image"
   />
-  <video loop muted autoplay playsinline class="hero hero-video" id="hero-loop">
+  <video loop muted autoplay playsinline class="hero hero-video">
     <source src="../../../assets/hero-video.mp4" type="video/mp4" />
   </video>
   <div class="hero-cta">
-    <div>We have lots of experience</div>
-    <div>You should contact us</div>
+    <div>Growing tomorrow's future, today</div>
     <button (click)="scrollToElement(contact)">Contact Now</button>
   </div>
 </div>
@@ -25,8 +24,10 @@
   CONTACT US INFORMATION
 </div>
 
+<!-- TODO: Redo mobile css for video -->
 <section>
   <div>
+    <header class="video-title">Our Journey</header>
     <iframe
       src="https://player.vimeo.com/video/358525077?title=0&byline=0&portrait=0"
       width="100%"

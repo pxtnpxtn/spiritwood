@@ -83,8 +83,14 @@
     align-items: center;
     div,
     button {
+      color: $white;
+      margin-bottom: 24px;
       z-index: 2;
     }
+  }
+
+  .video-title {
+    margin-bottom: 30px;
   }
 
   .video-player {
@@ -92,6 +98,13 @@
     height: -moz-available; /* WebKit-based browsers will ignore this. */
     height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
     height: stretch;
+
+    @include smallphone {
+      margin: -220px 0;
+    }
+    @include phone {
+      margin: -220px 0;
+    }
   }
 
   header.vp-title-header {

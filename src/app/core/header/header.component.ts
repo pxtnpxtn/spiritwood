@@ -102,8 +102,4 @@ export class HeaderComponent implements AfterViewInit {
   switchLanguage(language: string) {
     this.translate.use(language);
   }
-
-  ngOnDestroy(): void {
-    console.log('Header shouldn`t be destroyed');
-  }
 }

@@ -1,6 +1,9 @@
 @import '../../../styles.scss';
 
 :host {
+  .hero-position-top {
+    object-position: top;
+  }
   .farm-map {
     width: 100%;
   }
