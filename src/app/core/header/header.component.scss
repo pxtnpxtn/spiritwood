@@ -31,10 +31,6 @@
     color: $dark-green;
   }
 
-  input {
-    background: $light-grey;
-  }
-
   .active {
     border-bottom: 1px solid $white;
   }
@@ -55,6 +51,7 @@
 
   .desktopNavLinks {
     display: flex;
+    align-items: center;
     @include smallphone {
       display: none;
     }

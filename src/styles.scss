@@ -21,3 +21,49 @@ button {
   -moz-box-shadow: 2px 2px 5px 0px rgba(204, 204, 204, 0.3);
   box-shadow: 2px 2px 5px 0px rgba(204, 204, 204, 0.3);
 }
+
+// Vertical Spacing
+section {
+  @include desktop {
+    padding: 60px 0;
+  }
+
+  @include tablet {
+    padding: 40px 0;
+  }
+
+  @include phone {
+    padding: 24px 0;
+  }
+
+  @include smallphone {
+    padding: 24px 0;
+  }
+
+  // Horizontal Spacing
+  div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
+    @include desktop {
+      max-width: 940px;
+    }
+
+    @include tablet {
+      padding: 30px;
+    }
+
+    @include phone {
+      padding: 15px;
+    }
+
+    @include smallphone {
+      padding: 15px;
+    }
+  }
+  &.grey {
+    background: #fafafa;
+  }
+}

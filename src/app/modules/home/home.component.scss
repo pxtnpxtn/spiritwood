@@ -87,12 +87,11 @@
     }
   }
 
-  .video-container {
-    width: 940px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .video-player {
+    height: 100%;
+    height: -moz-available; /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+    height: stretch;
   }
 
   header.vp-title-header {
