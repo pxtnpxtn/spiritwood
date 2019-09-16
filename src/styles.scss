@@ -113,7 +113,7 @@ section {
 }
 
 // TODO: Rewrite Home hero to use these.
-// Hero Backgrounds & Paradox Splits
+// Hero Backgrounds
 .hero-background {
   position: relative;
   display: flex;
@@ -180,4 +180,14 @@ section {
     rgba(133, 133, 133, 0.4) 100%
   ); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#868782', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+// Parallax Splits
+.parallax-splitter {
+  height: 20vh;
+  width: 100%;
+  object-fit: cover;
+  @include desktop {
+    height: 30vh;
+  }
 }
