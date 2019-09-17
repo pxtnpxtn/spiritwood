@@ -57,15 +57,14 @@
       @include phone {
         align-items: center;
       }
-      div,
-      img {
+      div {
         padding: 5px;
       }
-    }
-
-    .logo {
-      width: 150px;
-      height: auto;
+      .logo {
+        height: 90px;
+        width: auto;
+        padding: 0;
+      }
     }
   }
 }
