@@ -34,6 +34,7 @@ button {
 header {
   font-size: 32px;
   margin-bottom: 24px;
+  text-align: center;
   @include smallphone {
     font-size: 22px;
     margin-bottom: 18px;

@@ -10,26 +10,83 @@
     flex-wrap: wrap;
     flex-direction: inherit !important;
     justify-content: center;
+    @include tablet {
+      padding: 0 24px !important;
+    }
+    @include phone {
+      padding: 0 !important;
+    }
+    @include smallphone {
+      padding: 0 !important;
+    }
     div:first-child {
       width: 100%;
+      padding: 0 24px !important;
     }
   }
 
   .card-width {
-    max-width: 400px;
+    max-width: 390px;
     width: 100%;
+    @include tablet {
+      max-width: 300px !important;
+    }
   }
 
   .team-card {
     padding: 24px;
     margin: 24px;
     border: 1px black solid;
-    max-width: 400px !important;
+    max-width: 390px !important;
     min-height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    @include tablet {
+      max-width: 300px !important;
+    }
+    // img {
+    //   border-radius: 50%;
+    //   width: 150px;
+    //   height: 150px;
+    //   overflow: hidden;
+    // }
+    .circletag {
+      display: block;
+      width: 140px !important;
+      height: 140px !important;
+      background: $white;
+      border-radius: 50%;
+      background-position: 50% 35%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0 !important;
+      &.douglas {
+        background-image: url('../../../assets/images/team-douglas.jpg');
+      }
+      &.ken {
+        background-image: url('../../../assets/images/team-ken.jpg');
+        background-position: 50% 20%;
+      }
+      &.vivian {
+        background-image: url('../../../assets/images/team-vivian.jpg');
+        background-position: 50% 58%;
+      }
+      &.tim {
+        background-image: url('../../../assets/images/team-tim.jpg');
+        background-position: 50% 25%;
+      }
+      &.amado {
+        background-image: url('../../../assets/images/team-amado.jpg');
+      }
+      &.juan {
+        background-image: url('../../../assets/images/team-juan.jpg');
+      }
+      &.wilfredo {
+        background-image: url('../../../assets/images/team-wilfredo.jpg');
+      }
+    }
   }
 
   .farm-map {
