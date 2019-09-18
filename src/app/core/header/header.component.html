@@ -14,7 +14,7 @@
     <a routerLink="contact-us" routerLinkActive="active">Contact Us</a>
     <div class="translationToggle">
       <button (click)="switchLanguage('en')">en</button>
-      <span style="color: white">/</span>
+      <span [class.down]="isVisible">/</span>
       <button (click)="switchLanguage('zh')">zh</button>
     </div>
   </div>
