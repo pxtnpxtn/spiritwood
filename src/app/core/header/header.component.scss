@@ -79,8 +79,26 @@
   }
 
   .hamburgerMenu {
+    width: 40px;
+    height: 40px;
+    background-color: $white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+    &.down {
+      background: $dark-green;
+    }
     @include desktop {
       display: none;
+    }
+    img {
+      width: 70%;
+      height: 70%;
     }
   }
 

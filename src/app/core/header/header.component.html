@@ -28,9 +28,13 @@
       />
     </div>
   </div>
-  <button (click)="mobileMenuToggle()" class="hamburgerMenu">
-    HAMBURGER
-  </button>
+  <div
+    (click)="mobileMenuToggle()"
+    class="hamburgerMenu"
+    [class.down]="isVisible"
+  >
+    <img src="../../../assets/hamburger-closed.png" />
+  </div>
 </div>
 <div [@hamburger] *ngIf="mobileMenu" class="mobileMenu">
   <a
