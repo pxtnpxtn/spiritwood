@@ -1,1 +1,45 @@
 @import '../../../styles.scss';
+
+:host {
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 40px !important;
+    margin-bottom: 40px !important;
+    border: 1px black solid;
+    @include smallphone {
+      flex-direction: column !important;
+      &.reverse {
+        flex-direction: column-reverse !important;
+      }
+    }
+
+    @include phone {
+      flex-direction: column !important;
+      &.reverse {
+        flex-direction: column-reverse !important;
+      }
+    }
+    header {
+      margin: 20px 0;
+    }
+    div {
+      padding: 0 !important;
+    }
+  }
+  .content {
+    width: 60%;
+    text-align: justify;
+    margin: 0 !important;
+    @include smallphone {
+      width: 100%;
+    }
+
+    @include phone {
+      width: 100%;
+    }
+  }
+}
