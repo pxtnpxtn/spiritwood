@@ -13,9 +13,17 @@
     <a routerLink="gallery" routerLinkActive="active">Gallery</a>
     <a routerLink="contact-us" routerLinkActive="active">Contact Us</a>
     <div class="translationToggle">
-      <button (click)="switchLanguage('en')">en</button>
+      <img
+        (click)="switchLanguage('en')"
+        class="flag"
+        src="../../../assets/united-kingdom.svg"
+      />
       <span [class.down]="isVisible">/</span>
-      <button (click)="switchLanguage('zh')">zh</button>
+      <img
+        (click)="switchLanguage('zh')"
+        class="flag"
+        src="../../../assets/china.svg"
+      />
     </div>
   </div>
   <button (click)="mobileMenuToggle()" class="hamburgerMenu">
@@ -53,8 +61,16 @@
     Contact Us</a
   >
   <div class="translationToggle">
-    <button (click)="switchLanguage('en')">en</button>
-    <span style="color: white">/</span>
-    <button (click)="switchLanguage('zh')">zh</button>
+    <img
+      (click)="switchLanguage('en')"
+      class="flag"
+      src="../../../assets/united-kingdom.svg"
+    />
+    <span [class.down]="isVisible">/</span>
+    <img
+      (click)="switchLanguage('zh')"
+      class="flag"
+      src="../../../assets/china.svg"
+    />
   </div>
 </div>
