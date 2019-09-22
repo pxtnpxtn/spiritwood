@@ -6,51 +6,73 @@
     display: flex;
     flex-direction: row !important;
     justify-content: space-between !important;
-    align-items: center !important;
-    padding: 40px !important;
+    align-items: flex-start !important;
     margin-bottom: 40px !important;
     background-color: $white;
     border-radius: 0.5rem;
     box-sizing: border-box;
-    box-shadow: 0 10px 30px -14px rgba(0, 0, 0, 0.25);
     @include smallphone {
+      align-items: center !important;
       flex-direction: column !important;
       &.reverse {
         flex-direction: column-reverse !important;
       }
     }
-
     @include phone {
+      align-items: center !important;
       flex-direction: column !important;
       &.reverse {
         flex-direction: column-reverse !important;
       }
     }
     header {
-      margin: 20px 0;
+      font-size: 22px;
+      margin: 0 0 24px 0;
       @include smallphone {
+        font-size: 18px;
         text-align: center;
       }
       @include phone {
+        font-size: 18px;
         text-align: center;
       }
     }
     div {
       padding: 0 !important;
     }
+    img {
+      height: auto;
+      width: 26%;
+      @include smallphone {
+        width: 100%;
+      }
+      @include phone {
+        width: 100%;
+      }
+    }
   }
   .content {
-    width: 60%;
+    width: 66%;
     text-align: justify;
     margin: 0 !important;
     @include smallphone {
       width: 100%;
+      margin-bottom: 24px !important;
     }
     @include phone {
       width: 100%;
+      margin-bottom: 24px !important;
     }
     &.title-left {
       align-items: unset;
+    }
+  }
+  .header-left {
+    @include desktop {
+      align-self: flex-start;
+    }
+    @include tablet {
+      align-self: flex-start;
     }
   }
 }
