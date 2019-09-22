@@ -1,61 +1,51 @@
-import { douglas } from '../images/team-douglas.jpg';
-import { ken } from '../images/team-ken.jpg';
-import { tim } from '../images/team-tim.jpg';
-import { amado } from '../images/team-amado.jpg';
-import { juan } from '../images/team-juan.jpg';
-import { wilfredo } from '../images/team-wilfredo.jpg';
-import { vivian } from '../images/team-vivian.jpg';
-
-export const team = [douglas, ken, tim, amado, juan, wilfredo, vivian];
-
 export const gallery1 = [
-  'https://i.imgur.com/HAoalIc.jpg',
-  'https://i.imgur.com/MaISdFB.jpg',
-  'https://i.imgur.com/ZEup2df.jpg',
-  'https://i.imgur.com/fs8AeSF.jpg',
-  'https://i.imgur.com/YNKV7dU.jpg',
-  'https://i.imgur.com/WpzbXcb.jpg',
-  'https://i.imgur.com/ri3CoGZ.jpg',
-  'https://i.imgur.com/Zy0RLVC.jpg',
-  'https://i.imgur.com/piI92fA.jpg'
+  '../../assets/images/gallery/spiritwood-1.jpg',
+  '../../assets/images/gallery/spiritwood-2.jpg',
+  '../../assets/images/gallery/spiritwood-15.jpg',
+  '../../assets/images/gallery/spiritwood-3.jpg',
+  '../../assets/images/gallery/spiritwood-4.jpg',
+  '../../assets/images/gallery/spiritwood-21.jpg',
+  '../../assets/images/gallery/spiritwood-6.jpg',
+  '../../assets/images/gallery/spiritwood-7.jpg',
+  '../../assets/images/gallery/spiritwood-9.jpg',
+  '../../assets/images/gallery/spiritwood-10.jpg'
 ];
 
 export const gallery2 = [
-  'https://i.imgur.com/BWoomUu.jpg',
-  'https://i.imgur.com/jI928SN.jpg',
-  'https://i.imgur.com/iwpSzd1.jpg',
-  'https://i.imgur.com/ub4XC6m.jpg',
-  'https://i.imgur.com/WSf6Ghr.jpg',
-  'https://i.imgur.com/3vZbRwO.jpg',
-  'https://i.imgur.com/EBBGyE3.jpg',
-  'https://i.imgur.com/A4XkAUc.jpg',
-  'https://i.imgur.com/W9g0iSF.jpg',
-  'https://i.imgur.com/ZB6ooSt.jpg'
+  '../../assets/images/gallery/spiritwood-11.jpg',
+  '../../assets/images/gallery/spiritwood-12.jpg',
+  '../../assets/images/gallery/spiritwood-13.jpg',
+  '../../assets/images/gallery/spiritwood-14.jpg',
+  '../../assets/images/gallery/spiritwood-8.jpg',
+  '../../assets/images/gallery/spiritwood-16.jpg',
+  '../../assets/images/gallery/spiritwood-17.jpg',
+  '../../assets/images/gallery/spiritwood-18.jpg',
+  '../../assets/images/gallery/spiritwood-19.jpg',
+  '../../assets/images/gallery/spiritwood-27.jpg'
 ];
 
 export const gallery3 = [
-  'https://i.imgur.com/wb0Sf8O.jpg',
-  'https://i.imgur.com/np7J8GL.jpg',
-  'https://i.imgur.com/dwSSyCm.jpg',
-  'https://i.imgur.com/WvDyk8K.jpg',
-  'https://i.imgur.com/6cmchiO.jpg',
-  'https://i.imgur.com/0YBbsh0.jpg',
-  'https://i.imgur.com/QqAz0J7.jpg',
-  'https://i.imgur.com/F4rjbcz.jpg',
-  'https://i.imgur.com/rXA4nUb.jpg',
-  'https://i.imgur.com/699y0RO.jpg'
+  '../../assets/images/gallery/spiritwood-5.jpg',
+  '../../assets/images/gallery/spiritwood-22.jpg',
+  '../../assets/images/gallery/spiritwood-23.jpg',
+  '../../assets/images/gallery/spiritwood-24.jpg',
+  '../../assets/images/gallery/spiritwood-32.jpg',
+  '../../assets/images/gallery/spiritwood-26.jpg',
+  '../../assets/images/gallery/spiritwood-20.jpg',
+  '../../assets/images/gallery/spiritwood-28.jpg',
+  '../../assets/images/gallery/spiritwood-29.jpg',
+  '../../assets/images/gallery/spiritwood-30.jpg'
 ];
 
 export const gallery4 = [
-  'https://i.imgur.com/pdZWG0l.jpg',
-  'https://i.imgur.com/xAFJ4Aq.jpg',
-  'https://i.imgur.com/VGzq8Qv.jpg',
-  'https://i.imgur.com/sX1z5cg.jpg',
-  'https://i.imgur.com/HvwYIs5.jpg',
-  'https://i.imgur.com/aztZ7zk.jpg',
-  'https://i.imgur.com/NrhpCcp.jpg',
-  'https://i.imgur.com/O6Qybxx.jpg',
-  'https://i.imgur.com/hPd1t5p.jpg',
-  'https://i.imgur.com/codpvXG.jpg',
-  'https://i.imgur.com/Ui7D59h.jpg'
+  '../../assets/images/gallery/spiritwood-31.jpg',
+  '../../assets/images/gallery/spiritwood-25.jpg',
+  '../../assets/images/gallery/spiritwood-33.jpg',
+  '../../assets/images/gallery/spiritwood-34.jpg',
+  '../../assets/images/gallery/spiritwood-35.jpg',
+  '../../assets/images/gallery/spiritwood-36.jpg',
+  '../../assets/images/gallery/spiritwood-37.jpg',
+  '../../assets/images/gallery/spiritwood-38.jpg',
+  '../../assets/images/gallery/spiritwood-39.jpg',
+  '../../assets/images/gallery/spiritwood-40.jpg'
 ];

@@ -39,6 +39,12 @@
     }
     .hero-title {
       font-size: 30px;
+      @include smallphone {
+        font-size: 24px;
+      }
+      @include phone {
+        font-size: 24px;
+      }
     }
   }
 
