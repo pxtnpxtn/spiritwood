@@ -12,27 +12,51 @@ body {
   font-weight: 400;
 }
 
+div {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 button {
   color: $white;
-  background: $dark-green;
-  box-shadow: inset 0 -3px 0 $light-green;
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    -45deg,
+    $light-green 0%,
+    $dark-green 51%,
+    $light-green 100%
+  );
+  box-shadow: 0 4px 15px 0 rgba(33, 64, 46, 0.75);
   border: none;
   height: 46px;
   padding: 0 26px;
   margin: 0 10px;
-  font-size: 1rem;
-  border-radius: 46px;
-  transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+  font-size: 15px;
+  border-radius: 5px;
   cursor: pointer;
+  &.bottom {
+    margin-bottom: 24px;
+  }
+  &.top {
+    margin-top: 24px;
+  }
+  &.top-bottom {
+    margin: 24px 0;
+  }
   a {
     color: $white;
     text-decoration: none;
   }
 }
 
+button:hover {
+  background-position: right center;
+}
+
 // Header tag
 header {
-  font-size: 32px;
+  font-size: 30px;
   margin-bottom: 24px;
   text-align: center;
   @include smallphone {
@@ -47,6 +71,9 @@ header {
 
   @include tablet {
     font-size: 32px;
+  }
+  &.left {
+    text-align: left;
   }
 }
 

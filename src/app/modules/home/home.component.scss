@@ -25,6 +25,23 @@
     }
   }
 
+  .hero-cta {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div,
+    button {
+      color: $white;
+      margin-bottom: 24px;
+      z-index: 2;
+    }
+    .hero-title {
+      font-size: 30px;
+    }
+  }
+
   .img-gradient {
     position: relative;
     display: flex;
@@ -73,20 +90,6 @@
       rgba(133, 133, 133, 0.4) 100%
     ); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#868782', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-  }
-
-  .hero-cta {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    div,
-    button {
-      color: $white;
-      margin-bottom: 24px;
-      z-index: 2;
-    }
   }
 
   .video-title {
