@@ -1,8 +1,15 @@
 @import '../../../../styles.scss';
 
 :host {
+  margin-top: 55px;
   display: flex;
   justify-content: center;
+  @include smallphone {
+    margin-top: 35px;
+  }
+  @include phone {
+    margin-top: 35px;
+  }
 
   * {
     box-sizing: border-box;
