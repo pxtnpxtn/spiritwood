@@ -1,0 +1,42 @@
+@import '../../../styles.scss';
+
+:host {
+  .content {
+    display: flex;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    @include phone {
+      padding: 0 !important;
+      align-items: center !important;
+      flex-direction: column-reverse !important;
+    }
+    @include smallphone {
+      padding: 0 !important;
+      align-items: center !important;
+      flex-direction: column-reverse !important;
+    }
+    img {
+      max-width: 50%;
+      @include phone {
+        max-width: 87%;
+      }
+      @include smallphone {
+        max-width: 87%;
+      }
+    }
+  }
+  .text {
+    flex-direction: column;
+    padding-left: 24px;
+    text-align: center;
+    @include phone {
+      padding: 0 24px;
+    }
+    @include smallphone {
+      padding: 0 24px;
+    }
+    button {
+      margin: 24px 0;
+    }
+  }
+}

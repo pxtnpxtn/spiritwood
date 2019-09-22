@@ -12,7 +12,7 @@
     background-color: $white;
     border-radius: 0.5rem;
     box-sizing: border-box;
-    box-shadow: 0 10px 40px -14px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 30px -14px rgba(0, 0, 0, 0.25);
     @include smallphone {
       flex-direction: column !important;
       &.reverse {

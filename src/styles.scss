@@ -27,7 +27,7 @@ button {
     $dark-green 51%,
     $light-green 100%
   );
-  box-shadow: 0 4px 15px 0 rgba(33, 64, 46, 0.75);
+  box-shadow: 0 4px 8px 0 rgba(33, 64, 46, 0.5);
   border: none;
   height: 46px;
   padding: 0 26px;
@@ -241,4 +241,19 @@ section {
   @include desktop {
     height: 30vh;
   }
+}
+
+// Helper Classes
+.mobile-push-top {
+  @include smallphone {
+    margin-top: 35px;
+  }
+
+  @include phone {
+    margin-top: 35px;
+  }
+}
+
+.padding-none {
+  padding: 0 !important;
 }
