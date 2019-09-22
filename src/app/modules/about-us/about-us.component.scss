@@ -34,24 +34,20 @@
   }
 
   .team-card {
-    padding: 24px;
+    padding: 36px 24px;
     margin: 24px;
-    border: 1px black solid;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    box-shadow: 0 10px 40px -14px rgba(0, 0, 0, 0.25);
+    background-color: $white;
     max-width: 390px !important;
     min-height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     @include tablet {
       max-width: 300px !important;
     }
-    // img {
-    //   border-radius: 50%;
-    //   width: 150px;
-    //   height: 150px;
-    //   overflow: hidden;
-    // }
     .circletag {
       display: block;
       width: 140px !important;
@@ -61,7 +57,7 @@
       background-position: 50% 35%;
       background-size: cover;
       background-repeat: no-repeat;
-      margin: 0 !important;
+      margin: 0 0 24px 0 !important;
       &.douglas {
         background-image: url('../../../assets/images/team-douglas.jpg');
       }
@@ -86,6 +82,22 @@
       &.wilfredo {
         background-image: url('../../../assets/images/team-wilfredo.jpg');
       }
+      &.spacing-top {
+        margin-top: 36px !important;
+      }
+    }
+    &.spacing-bottom {
+      margin-bottom: 24px;
+    }
+    .name {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .title {
+      font-size: 18px;
+      margin-bottom: 24px;
+      color: $shadow;
     }
   }
 

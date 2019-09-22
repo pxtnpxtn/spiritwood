@@ -75,6 +75,23 @@ header {
   &.left {
     text-align: left;
   }
+  &.top {
+    @include smallphone {
+      padding-top: 35px;
+    }
+
+    @include phone {
+      padding-top: 35px;
+    }
+
+    @include tablet {
+      padding-top: 55px;
+    }
+
+    @include desktop {
+      padding-top: 55px;
+    }
+  }
 }
 
 // Vertical Spacing
@@ -140,6 +157,9 @@ section {
   }
   &.grey {
     background: #fafafa;
+  }
+  &.top {
+    padding-top: 0;
   }
 }
 
