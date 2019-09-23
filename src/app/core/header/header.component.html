@@ -5,13 +5,21 @@
       routerLink="/"
       routerLinkActive="active"
       [routerLinkActiveOptions]="{ exact: true }"
-      >Home</a
+      >{{ 'nav-home' | translate }}</a
     >
     <!-- TODO: Create ngFor for all anchor tags. -->
-    <a routerLink="our-operation" routerLinkActive="active">Our Operation</a>
-    <a routerLink="about-us" routerLinkActive="active">About Us</a>
-    <a routerLink="gallery" routerLinkActive="active">Gallery</a>
-    <a routerLink="contact-us" routerLinkActive="active">Contact Us</a>
+    <a routerLink="our-operation" routerLinkActive="active">{{
+      'nav-our-operation' | translate
+    }}</a>
+    <a routerLink="about-us" routerLinkActive="active">{{
+      'nav-about-us' | translate
+    }}</a>
+    <a routerLink="gallery" routerLinkActive="active">{{
+      'nav-gallery' | translate
+    }}</a>
+    <a routerLink="contact-us" routerLinkActive="active">{{
+      'nav-contact-us' | translate
+    }}</a>
     <div class="translationToggle">
       <img
         (click)="switchLanguage('en')"
@@ -42,29 +50,32 @@
     routerLinkActive="active"
     [routerLinkActiveOptions]="{ exact: true }"
     (click)="mobileMenuToggle()"
-    >Home</a
+    >{{ 'nav-home' | translate }}</a
   >
   <a
     routerLink="our-operation"
     routerLinkActive="active"
     (click)="mobileMenuToggle()"
-    >Our Operation</a
+    >{{ 'nav-our-operation' | translate }}</a
   >
   <a
     routerLink="about-us"
     routerLinkActive="active"
     (click)="mobileMenuToggle()"
-    >About Us</a
+    >{{ 'nav-about-us' | translate }}</a
   >
-  <a routerLink="gallery" routerLinkActive="active" (click)="mobileMenuToggle()"
-    >Gallery</a
+  <a
+    routerLink="gallery"
+    routerLinkActive="active"
+    (click)="mobileMenuToggle()"
+    >{{ 'nav-gallery' | translate }}</a
   >
   <a
     routerLink="contact-us"
     routerLinkActive="active"
     (click)="mobileMenuToggle()"
   >
-    Contact Us</a
+    {{ 'nav-contact-us' | translate }}</a
   >
   <div class="translationToggle">
     <img

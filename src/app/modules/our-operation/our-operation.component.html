@@ -1,24 +1,20 @@
 <div class="hero-background">
   <img src="../../../assets/images/gallery/spiritwood-24.jpg" />
-  <header class="hero-text">Our Operation</header>
+  <header class="hero-text">{{ 'operation-hero-title' | translate }}</header>
 </div>
 
 <section>
   <div>
     <div class="push-bottom padding-none">
-      <header>Trees</header>
-      The plantations have been carefully mapped and measured to ensure the
-      perfect balance between the fast growing gmelina tree, while also having
-      enough of the slower growing mahogany.
+      <header>{{ 'operation-trees-title' | translate }}</header>
+      {{ 'operation-trees-summary' | translate }}
     </div>
     <div class="card">
       <div class="content">
-        <header class="header-left">White Teak (Gmelina Arborea)</header>
-        Gmenlina is a fast growing, moderately sized deciduous tree. From a
-        seedling to a harvestable adult tree in 20 years, it averages a meter of
-        growth per year, as it grows to a maximum of 30 meters high. The
-        straight, cylindrical bole is commonly around 50cm in diameter, however
-        some specimens are in excess of 140cm.
+        <header class="header-left">
+          {{ 'operation-teak-title' | translate }}
+        </header>
+        {{ 'operation-teak-text' | translate }}
       </div>
       <img src="../../../assets/images/teak.jpg" />
     </div>
@@ -26,61 +22,41 @@
     <div class="card reverse">
       <img src="../../../assets/images/mahogany.jpg" />
       <div class="content title-left">
-        <header class="left">Mahogany (Swietenia Macrophylla)</header>
-        The mahogany tree is one of the non-indigenous trees recommended for
-        reforestation by the Philippine forestry authorities. The giant mahogany
-        is a slow growing evergreen tree. It reaches a height of 30 to 40
-        meters, with some specimens reaching up to 60 meters tall. With a
-        straight and cylindrical bole, firm lumber and a diameter of 100 to 120
-        centimetres, it’s no wonder that mahogany is regarded as the world’s
-        finest timber for high-class furniture, instruments and cabinet work.
+        <header class="left">
+          {{ 'operation-mahogany-title' | translate }}
+        </header>
+        {{ 'operation-mahogany-text' | translate }}
       </div>
     </div>
 
-    <header class="left">Planting & Husbandry</header>
+    <header class="left">{{ 'operation-planting-title' | translate }}</header>
     <div class="card">
       <div class="content">
         <div class="push-bottom-small">
-          For more than 20 years, we have been planting and managing our
-          expanding tree farms. Once the seedlings have grown to an appropriate
-          size, they are transplanted into the plantations. They are then
-          overseen by our foresters and forest guards that perform maintenance
-          and husbandry work, ensuring that the trees are kept safe and secure.
+          {{ 'operation-planting-text1' | translate }}
         </div>
         <div class="push-bottom-small">
-          Sustainability is at the core of Spiritwood. We believe in harvesting
-          responsibly, following best practices such as selective cutting and
-          replanting, where new growth will replace the trees being cut,
-          allowing for long term stable production.
+          {{ 'operation-planting-text2' | translate }}
         </div>
         <div class="push-bottom-small">
-          The trees that were planted in the early years of the company are now
-          ready to support commercial selective harvesting, with our plantations
-          in San Pascual and Magsaysay being the first to be brought into
-          production.
+          {{ 'operation-planting-text3' | translate }}
         </div>
       </div>
       <img src="../../../assets/images/gallery/spiritwood-17.jpg" />
     </div>
 
-    <header class="left">Lumber Milling</header>
+    <header class="left">{{ 'operation-mill-title' | translate }}</header>
     <div class="card reverse">
       <img src="../../../assets/images/gallery/spiritwood-26.jpg" />
       <div class="content">
         <div class="push-bottom-small">
-          With such careful attention being put on how we grow our trees and
-          selecting which to cut, comes the benefit of having our lumber mill
-          operating regularly. Our clients range from local businesses to the
-          government.
+          {{ 'operation-mill-text1' | translate }}
         </div>
         <div class="push-bottom-small">
-          One project we are very proud of is building and delivering over
-          36,000 desks to the Department of Education for local schools.
+          {{ 'operation-mill-text2' | translate }}
         </div>
         <div class="push-bottom-small">
-          The company began harvesting in the last quarter of 2018, bringing the
-          mill into commercial operation. The mill is able to handle more than
-          three million board feet of rough cut lumber per year.
+          {{ 'operation-mill-text3' | translate }}
         </div>
       </div>
     </div>
@@ -89,6 +65,8 @@
 
 <section class="top">
   <div>
-    <button><a routerLink="/gallery">Visit Our Gallery</a></button>
+    <button>
+      <a routerLink="/gallery">{{ 'operation-button' | translate }}</a>
+    </button>
   </div>
 </section>

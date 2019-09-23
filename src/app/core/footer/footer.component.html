@@ -4,12 +4,20 @@
       routerLink="/"
       routerLinkActive="active"
       [routerLinkActiveOptions]="{ exact: true }"
-      >Home</a
+      >{{ 'nav-home' | translate }}</a
     >
-    <a routerLink="our-operation" routerLinkActive="active">Our Operation</a>
-    <a routerLink="about-us" routerLinkActive="active">About Us</a>
-    <a routerLink="gallery" routerLinkActive="active">Gallery</a>
-    <a routerLink="contact-us" routerLinkActive="active">Contact Us</a>
+    <a routerLink="our-operation" routerLinkActive="active">{{
+      'nav-our-operation' | translate
+    }}</a>
+    <a routerLink="about-us" routerLinkActive="active">{{
+      'nav-about-us' | translate
+    }}</a>
+    <a routerLink="gallery" routerLinkActive="active">{{
+      'nav-gallery' | translate
+    }}</a>
+    <a routerLink="contact-us" routerLinkActive="active">{{
+      'nav-contact-us' | translate
+    }}</a>
   </div>
   <div class="footer-right">
     <div>Spiritwood Corporation 2019</div>

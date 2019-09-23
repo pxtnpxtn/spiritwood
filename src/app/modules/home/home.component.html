@@ -8,29 +8,24 @@
     <source src="../../../assets/hero-video.mp4" type="video/mp4" />
   </video>
   <div class="hero-cta">
-    <!-- TODO: Remove, use as example for translate -->
-    <!-- <header>{{ 'ProductsTitle' | translate }}</header> -->
-    <div class="hero-title">Growing tomorrow's future</div>
-    <button (click)="scrollToElement(contact)">Contact Us Now</button>
+    <div class="hero-title">{{ 'home-hero-title' | translate }}</div>
+    <button (click)="scrollToElement(contact)">
+      {{ 'home-hero-button' | translate }}
+    </button>
   </div>
 </div>
 <section>
   <div>
-    <header>Experts in forestry</header>
+    <header>{{ 'home-about-title' | translate }}</header>
     <div class="center-text">
-      Spiritwood has been operating in the forestry sector for over 20 years.
-      Sustainably managing and growing trees is what we do best. With over 600
-      hectares of land across the Philippines and a fully licensed sawmill,
-      Spiritwood is working to evolve from a tree farm company in to an
-      international supplier of wood products.
+      {{ 'home-about-text1' | translate }}
     </div>
     <div class="center-text push-top">
-      The trees are currently approaching 20 years of age and are ready for
-      selective harvesting.
+      {{ 'home-about-text2' | translate }}
     </div>
 
     <button class="top">
-      <a routerLink="/our-operation">Learn More</a>
+      <a routerLink="/our-operation">{{ 'home-about-button' | translate }}</a>
     </button>
   </div>
 </section>
@@ -43,23 +38,20 @@
 
 <section class="grey" #contact>
   <div>
-    <header>Interested in growing the future?</header>
+    <header>{{ 'home-contact-title' | translate }}</header>
     <div class="center-text">
-      With an excess of 600 hectares of trees, ready to harvest, we now have a
-      standing inventory of over 160 million board feet. We are actively looking
-      for new partners to help us grow the future and would love to hear from
-      you.
+      {{ 'home-contact-text' | translate }}
     </div>
     <a href="mailto:info@spiritwoodgroup.com?subject=Spiritwood inquiry"
       ><button class="top">
-        Contact Us Now
+        {{ 'home-contact-button' | translate }}
       </button></a
     >
   </div>
 </section>
 
 <div>
-  <header class="video-title">Our Journey</header>
+  <header class="video-title">{{ 'home-video-title' | translate }}</header>
   <div class="embed-container">
     <iframe
       src="https://player.vimeo.com/video/358525077"
