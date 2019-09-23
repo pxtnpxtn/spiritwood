@@ -64,7 +64,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent implements AfterViewInit {
   public mobileMenu = false;
-  private isVisible = false;
+  public isVisible = false;
 
   @HostBinding('@toggle')
   get toggle(): VisibilityState {
