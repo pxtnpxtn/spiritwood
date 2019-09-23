@@ -8,20 +8,16 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent
-  },
+  }
 ];
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(
-      routes
-    ),
+    RouterModule.forChild(routes),
     TranslateSharedLazyModule
   ],
-  exports: [
-    RouterModule
-  ],
-  declarations: [HomeComponent]
+  exports: [RouterModule],
+  declarations: []
 })
-export class HomeModule { }
+export class HomeModule {}

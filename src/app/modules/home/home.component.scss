@@ -40,10 +40,10 @@
     .hero-title {
       font-size: 30px;
       @include smallphone {
-        font-size: 24px;
+        font-size: 20px;
       }
       @include phone {
-        font-size: 24px;
+        font-size: 20px;
       }
     }
   }
