@@ -85,24 +85,23 @@
   .hamburgerMenu {
     width: 40px;
     height: 40px;
-    background-color: $white;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-transition: background-color 0.2s linear;
-    -moz-transition: background-color 0.2s linear;
-    -o-transition: background-color 0.2s linear;
-    transition: background-color 0.2s linear;
-    &.down {
-      background: $dark-green;
-    }
     @include desktop {
       display: none;
     }
     img {
       width: 70%;
       height: 70%;
+    }
+    .white-burger {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(201deg)
+        brightness(106%) contrast(106%);
+    }
+    .green-burger {
+      filter: invert(14%) sepia(29%) saturate(1901%) hue-rotate(88deg)
+        brightness(91%) contrast(96%);
     }
   }
 

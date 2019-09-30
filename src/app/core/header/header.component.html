@@ -41,7 +41,14 @@
     class="hamburgerMenu"
     [class.down]="isVisible"
   >
-    <img src="../../../assets/hamburger-closed.png" />
+    <img
+      [ngClass]="isVisible ? 'green-burger' : 'white-burger'"
+      [src]="
+        mobileMenu
+          ? '../../../assets/hamburger-open.svg'
+          : '../../../assets/hamburger-closed.svg'
+      "
+    />
   </div>
 </div>
 <div [@hamburger] *ngIf="mobileMenu" class="mobileMenu">
