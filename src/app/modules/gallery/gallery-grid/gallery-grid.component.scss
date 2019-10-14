@@ -65,6 +65,16 @@
     cursor: pointer;
   }
 
+  // Hide images when on mobile
+  .image-gradient:nth-child(n + 6) {
+    @include smallphone {
+      display: none;
+    }
+    @include phone {
+      display: none;
+    }
+  }
+
   .image-gradient:hover:after {
     // TODO: Add 'View' text to overlay
     content: '';
@@ -129,12 +139,6 @@
 
     .row {
       padding: 0;
-    }
-
-    // TODO: Come back to this. Hide images past 5, when on mobile.
-    .column:nth-child(n + 5) {
-      // display: none;
-      background: red;
     }
   }
 }
