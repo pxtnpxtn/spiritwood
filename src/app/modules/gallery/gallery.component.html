@@ -1,9 +1,14 @@
+<app-gallery-popup
+  *ngIf="this.galleryService.showImage"
+  [imageUrl]="this.galleryService.imgURL"
+></app-gallery-popup>
+
 <div class="hero-background">
   <img src="../../../assets/images/gallery/spiritwood-35.jpg" />
   <header class="hero-text">{{ 'gallery-hero-title' | translate }}</header>
 </div>
 
-<app-gallery-grid></app-gallery-grid>
+<app-gallery-grid (viewImage)="openImagePopup($event)"></app-gallery-grid>
 
 <section>
   <div>

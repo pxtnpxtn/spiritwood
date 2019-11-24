@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import {
   gallery1,
   gallery2,
@@ -17,5 +17,17 @@ export class GalleryGridComponent implements OnInit {
   public images3 = gallery3;
   public images4 = gallery4;
 
+  @Output() viewImage = new EventEmitter<{ imgURL: string }>();
+
+  public onImageClick(event) {
+    if (window.innerWidth > 770) {
+      this.viewImage.emit({
+        imgURL: event.target.src
+      });
+    }
+  }
+
   ngOnInit() {}
+
+  constructor() {}
 }

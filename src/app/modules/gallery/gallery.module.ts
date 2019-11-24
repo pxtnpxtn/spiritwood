@@ -4,6 +4,8 @@ import { GalleryComponent } from './gallery.component';
 import { RouterModule, Routes } from '@angular/router';
 import { TranslateSharedLazyModule } from '../translate-shared-lazy/translate-shared-lazy.module';
 import { GalleryGridComponent } from './gallery-grid/gallery-grid.component';
+import { GalleryPopupComponent } from './gallery-popup/gallery-popup.component';
+import { GalleryService } from './gallery.service';
 
 const routes: Routes = [
   {
@@ -18,6 +20,7 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     TranslateSharedLazyModule
   ],
-  declarations: [GalleryComponent, GalleryGridComponent]
+  declarations: [GalleryComponent, GalleryGridComponent, GalleryPopupComponent],
+  providers: [GalleryService]
 })
 export class GalleryModule {}

@@ -6,7 +6,7 @@
       (mouseenter)="image.hover = true"
       (mouseleave)="image.hover = false"
     >
-      <img [src]="image" />
+      <img [src]="image" (click)="onImageClick($event)" />
     </div>
   </div>
   <div class="column">
@@ -16,7 +16,7 @@
       (mouseenter)="image.hover = true"
       (mouseleave)="image.hover = false"
     >
-      <img [src]="image" />
+      <img [src]="image" (click)="onImageClick($event)" />
     </div>
   </div>
   <div class="column">
@@ -26,7 +26,7 @@
       (mouseenter)="image.hover = true"
       (mouseleave)="image.hover = false"
     >
-      <img [src]="image" />
+      <img [src]="image" (click)="onImageClick($event)" />
     </div>
   </div>
   <div class="column">
@@ -36,7 +36,7 @@
       (mouseenter)="image.hover = true"
       (mouseleave)="image.hover = false"
     >
-      <img [src]="image" />
+      <img [src]="image" (click)="onImageClick($event)" />
     </div>
   </div>
 </div>
