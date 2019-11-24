@@ -50,15 +50,15 @@
     pointer-events: none;
   }
 
-  // Hide images when on mobile
-  .image-gradient:nth-child(n + 6) {
-    @include smallphone {
-      display: none;
-    }
-    @include phone {
-      display: none;
-    }
-  }
+  // // Hide images when on mobile
+  // .image-gradient:nth-child(n + 6) {
+  //   @include smallphone {
+  //     display: none;
+  //   }
+  //   @include phone {
+  //     display: none;
+  //   }
+  // }
 
   .image-gradient:hover:after {
     // TODO: Add 'View' text to overlay
